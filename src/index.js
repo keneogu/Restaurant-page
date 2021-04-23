@@ -1,9 +1,7 @@
 import './css/style.scss'
 import * as meal from './head'
+import * as nav from './nav'
 
-console.log('John what is it?');
-let a = 'Big';
-let b = 'small';
-console.log(a + b);
+const content = document.querySelector('#content');
 
-console.log(meal.lunch);
+nav.navbar();
