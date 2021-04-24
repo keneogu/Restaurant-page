@@ -18,9 +18,8 @@ const homeFunc = () => {
   mainDiv.appendChild(paragraph);
   mainDiv.appendChild(btn);
   main.appendChild(mainDiv);
-
+  
   content.appendChild(main);
-
 }
 
 export {homeFunc};

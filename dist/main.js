@@ -451,6 +451,49 @@ module.exports = function (list, options) {
 
 /***/ }),
 
+/***/ "./src/contact.js":
+/*!************************!*\
+  !*** ./src/contact.js ***!
+  \************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "createContact": () => (/* binding */ createContact)
+/* harmony export */ });
+const createContact = () => {
+  const content = document.querySelector('#content');
+  content.append(createTitle());
+  content.append(createContactSection());
+};
+
+const createTitle = () => {
+	const title = document.createElement('h3');
+	title.classList.add('title-header');
+	title.textContent = "Contact";
+	return title;
+};
+
+const createContactSection = () => {
+	const container = document.createElement('div');
+	container.classList.add("contact-section");
+	const phone = document.createElement("p");
+	phone.textContent = "Phone: ###-####-####";
+	const email = document.createElement("p");
+	email.textContent = 'Email: email@email.com';
+	const location = document.createElement("p");
+	location.textContent = "Location: 1337 Place, Location, LC";
+	container.append(phone);
+	container.append(email);
+	container.append(location);
+
+	return container;
+}
+
+
+
+/***/ }),
+
 /***/ "./src/home.js":
 /*!*********************!*\
   !*** ./src/home.js ***!
@@ -481,9 +524,8 @@ const homeFunc = () => {
   mainDiv.appendChild(paragraph);
   mainDiv.appendChild(btn);
   main.appendChild(mainDiv);
-
+  
   content.appendChild(main);
-
 }
 
 
@@ -618,6 +660,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _css_style_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./css/style.scss */ "./src/css/style.scss");
 /* harmony import */ var _nav__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./nav */ "./src/nav.js");
 /* harmony import */ var _home__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./home */ "./src/home.js");
+/* harmony import */ var _contact_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./contact.js */ "./src/contact.js");
+
+
+
 
 
 
@@ -625,7 +671,8 @@ __webpack_require__.r(__webpack_exports__);
 const content = document.querySelector('#content');
 
 _nav__WEBPACK_IMPORTED_MODULE_1__.navbar();
-_home__WEBPACK_IMPORTED_MODULE_2__.homeFunc();
+(0,_home__WEBPACK_IMPORTED_MODULE_2__.homeFunc)();
+(0,_contact_js__WEBPACK_IMPORTED_MODULE_3__.createContact)();
 })();
 
 /******/ })()
