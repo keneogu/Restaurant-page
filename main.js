@@ -532,6 +532,69 @@ const homeFunc = () => {
 
 /***/ }),
 
+/***/ "./src/menu.js":
+/*!*********************!*\
+  !*** ./src/menu.js ***!
+  \*********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "createMenu": () => (/* binding */ createMenu)
+/* harmony export */ });
+function MenuItem(name, src) {
+	this.name = name;
+	this.src = src;
+  }
+  
+  const menu = [
+	new MenuItem("Simple Cheese", "../src/images/meat-poriedge.jpeg"),
+	new MenuItem("Mixed Foods", "../src/images/food.jpeg"),
+	new MenuItem("Nigerian Jollof Rice", "../src/images/Nigerian-Jollof.jpeg"),
+	new MenuItem("Vegetable Meal", "../src/images/veg.jpeg"),
+  ];
+  
+  const createMenu = () => {
+	const content = document.querySelector('#content');
+	content.append(createTitle());
+	content.append(createMenuBackground());
+  };
+  
+  const createTitle = () => {
+	const title = document.createElement("h3");
+	title.classList.add("title-header");
+	title.innerText = "Menu";
+	return title;
+  };
+  
+  const createMenuBackground = () => {
+	const background = document.createElement("div");
+	background.classList.add("menu-background");
+	menu.forEach((item) => {
+	  background.append(createMenuItem(item));
+	});
+	return background;
+  };
+  
+  const createMenuItem = ({ name, src }) => {
+	const container = document.createElement("div");
+	container.classList.add("menu-item");
+  
+	const img = document.createElement("img");
+	img.src = src;
+	container.append(img);
+  
+	const p = document.createElement("p");
+	p.innerText = name;
+	container.append(p);
+  
+	return container;
+  };
+  
+  
+
+/***/ }),
+
 /***/ "./src/nav.js":
 /*!********************!*\
   !*** ./src/nav.js ***!
@@ -661,6 +724,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _nav__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./nav */ "./src/nav.js");
 /* harmony import */ var _home__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./home */ "./src/home.js");
 /* harmony import */ var _contact_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./contact.js */ "./src/contact.js");
+/* harmony import */ var _menu_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./menu.js */ "./src/menu.js");
 
 
 
@@ -673,6 +737,7 @@ const content = document.querySelector('#content');
 _nav__WEBPACK_IMPORTED_MODULE_1__.navbar();
 (0,_home__WEBPACK_IMPORTED_MODULE_2__.homeFunc)();
 (0,_contact_js__WEBPACK_IMPORTED_MODULE_3__.createContact)();
+(0,_menu_js__WEBPACK_IMPORTED_MODULE_4__.createMenu)();
 })();
 
 /******/ })()
