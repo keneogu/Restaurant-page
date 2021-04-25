@@ -10,10 +10,10 @@ function MenuItem(name, src) {
 	new MenuItem("Vegetable Meal", "../src/images/veg.jpeg"),
   ];
   
-  const createMenu = () => {
-	const content = document.querySelector('#content');
-	content.append(createTitle());
-	content.append(createMenuBackground());
+  const createMenu = (container) => {
+	// const content = document.querySelector('#content');
+	container.append(createTitle());
+	container.append(createMenuBackground());
   };
   
   const createTitle = () => {

@@ -1,5 +1,5 @@
 
-const homeFunc = () => {
+const homeFunc = (container) => {
   const main = document.createElement('div');
   main.classList.add('main', 'text-light');
   const mainDiv = document.createElement('div');
@@ -19,7 +19,7 @@ const homeFunc = () => {
   mainDiv.appendChild(btn);
   main.appendChild(mainDiv);
   
-  content.appendChild(main);
+  container.appendChild(main);
 }
 
 export default homeFunc;

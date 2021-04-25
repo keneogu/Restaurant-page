@@ -1,7 +1,6 @@
-const createContact = () => {
-  const content = document.querySelector('#content');
-  content.append(createTitle());
-  content.append(createContactSection());
+const createContact = (container) => {
+  container.append(createTitle());
+  container.append(createContactSection());
 };
 
 const createTitle = () => {

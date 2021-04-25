@@ -2,7 +2,7 @@ import homeFunc from "./home";
 import { createContact } from "./contact";
 import { createMenu } from "./menu";
 
-const container = document.querySelector('.contain');
+// const container = document.querySelector('.contain');
 
 function removeAllChildNodes(parent) {
   while (parent.firstChild) {
@@ -10,7 +10,7 @@ function removeAllChildNodes(parent) {
   }
 }
 
-const navbar = (content) => {
+const navbar = (content, container) => {
   const nav = document.createElement('nav');
   nav.classList.add('w-100', 'px-4', 'py-3', 'nav-bar', 'd-flex', 'justify-content-around', 'bg-light', 'text-dark');
   const f_nav = document.createElement('div');
@@ -37,16 +37,16 @@ const navbar = (content) => {
 
   f_nav.addEventListener('click', () => {
     removeAllChildNodes(container);
-    container.appendChild(homeFunc());
+    homeFunc(container)
   })
   s_nav.addEventListener('click', () => {
     removeAllChildNodes(container);
-	  container.appendChild(createMenu());
+   createMenu(container)
   })
   t_nav.addEventListener('click', () => {
     removeAllChildNodes(container);
-	  container.appendChild(createContact());
+   createContact(container)
   })
 }
 
-export {navbar}
+export default navbar
