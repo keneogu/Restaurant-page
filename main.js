@@ -461,10 +461,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "createContact": () => (/* binding */ createContact)
 /* harmony export */ });
-const createContact = () => {
-  const content = document.querySelector('#content');
-  content.append(createTitle());
-  content.append(createContactSection());
+const createContact = (container) => {
+  container.append(createTitle());
+  container.append(createContactSection());
 };
 
 const createTitle = () => {
@@ -505,7 +504,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 
-const homeFunc = () => {
+const homeFunc = (container) => {
   const main = document.createElement('div');
   main.classList.add('main', 'text-light');
   const mainDiv = document.createElement('div');
@@ -525,7 +524,7 @@ const homeFunc = () => {
   mainDiv.appendChild(btn);
   main.appendChild(mainDiv);
   
-  content.appendChild(main);
+  container.appendChild(main);
 }
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (homeFunc);
@@ -554,10 +553,10 @@ function MenuItem(name, src) {
 	new MenuItem("Vegetable Meal", "../src/images/veg.jpeg"),
   ];
   
-  const createMenu = () => {
-	const content = document.querySelector('#content');
-	content.append(createTitle());
-	content.append(createMenuBackground());
+  const createMenu = (container) => {
+	// const content = document.querySelector('#content');
+	container.append(createTitle());
+	container.append(createMenuBackground());
   };
   
   const createTitle = () => {
@@ -603,7 +602,7 @@ function MenuItem(name, src) {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "navbar": () => (/* binding */ navbar)
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var _home__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./home */ "./src/home.js");
 /* harmony import */ var _contact__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./contact */ "./src/contact.js");
@@ -612,7 +611,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-const container = document.querySelector('.contain');
+// const container = document.querySelector('.contain');
 
 function removeAllChildNodes(parent) {
   while (parent.firstChild) {
@@ -620,7 +619,7 @@ function removeAllChildNodes(parent) {
   }
 }
 
-const navbar = (content) => {
+const navbar = (content, container) => {
   const nav = document.createElement('nav');
   nav.classList.add('w-100', 'px-4', 'py-3', 'nav-bar', 'd-flex', 'justify-content-around', 'bg-light', 'text-dark');
   const f_nav = document.createElement('div');
@@ -647,19 +646,19 @@ const navbar = (content) => {
 
   f_nav.addEventListener('click', () => {
     removeAllChildNodes(container);
-    container.appendChild((0,_home__WEBPACK_IMPORTED_MODULE_0__.default)());
+    (0,_home__WEBPACK_IMPORTED_MODULE_0__.default)(container)
   })
   s_nav.addEventListener('click', () => {
     removeAllChildNodes(container);
-	  container.appendChild((0,_menu__WEBPACK_IMPORTED_MODULE_2__.createMenu)());
+   (0,_menu__WEBPACK_IMPORTED_MODULE_2__.createMenu)(container)
   })
   t_nav.addEventListener('click', () => {
     removeAllChildNodes(container);
-	  container.appendChild((0,_contact__WEBPACK_IMPORTED_MODULE_1__.createContact)());
+   (0,_contact__WEBPACK_IMPORTED_MODULE_1__.createContact)(container)
   })
 }
 
-
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (navbar);
 
 /***/ })
 
@@ -741,36 +740,19 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _css_style_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./css/style.scss */ "./src/css/style.scss");
 /* harmony import */ var _nav__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./nav */ "./src/nav.js");
 /* harmony import */ var _home__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./home */ "./src/home.js");
-/* harmony import */ var _contact_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./contact.js */ "./src/contact.js");
-/* harmony import */ var _menu_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./menu.js */ "./src/menu.js");
-
-
-
 
 
 
 
 const content = document.querySelector('#content');
-_nav__WEBPACK_IMPORTED_MODULE_1__.navbar(content);
-// navBarSetup();
-
 const container = document.createElement('div');
-container.classList.add('contain');
+container.classList.add('main-container')
+;(0,_nav__WEBPACK_IMPORTED_MODULE_1__.default)(content, container);
 content.appendChild(container);
+(0,_home__WEBPACK_IMPORTED_MODULE_2__.default)(container);
 
-container.appendChild((0,_home__WEBPACK_IMPORTED_MODULE_2__.default)());
 
-// const navBarSetup = () => {
-// 	const home = document.querySelector("#Home");
-// 	home.addEventListener("click", homeFunc);
-// 	const menu = document.querySelector("#Menu");
-// 	menu.addEventListener("click", createMenu);
-// 	const contact = document.querySelector("#Contact");
-// 	contact.addEventListener("click", createContact);
-// };
 
-// createContact();
-// createMenu();
 })();
 
 /******/ })()
