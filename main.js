@@ -16,12 +16,18 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _node_modules_css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 /* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/getUrl.js */ "./node_modules/css-loader/dist/runtime/getUrl.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _images_restaurant_jpeg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../images/restaurant.jpeg */ "./src/images/restaurant.jpeg");
 // Imports
 
 
+
+
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0___default()));
+var ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(_images_restaurant_jpeg__WEBPACK_IMPORTED_MODULE_3__.default);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "body {\n  background-color: darkgoldenrod;\n  color: aliceblue;\n}", "",{"version":3,"sources":["webpack://./src/css/style.scss"],"names":[],"mappings":"AAEA;EACE,+BAHS;EAIT,gBAAA;AADF","sourcesContent":["$bg-color: darkgoldenrod;\n\nbody {\n  background-color: $bg-color;\n  color: aliceblue;\n}"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, "* {\n  padding: 0;\n  margin: 0;\n  box-sizing: border-box;\n}\n\nbody {\n  background: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ") no-repeat center fixed;\n  background-size: cover;\n  color: aliceblue;\n}\n\n.main {\n  max-width: 100%;\n  background: rgba(131, 133, 131, 0.925);\n  border: 5px solid rgba(100, 236, 37, 0.933);\n  border-radius: 20px;\n  padding-bottom: 1em;\n  margin-top: 15%;\n  margin-bottom: 2em;\n  z-index: 0;\n}\n.main .main-div {\n  width: 50%;\n  margin: 0 auto;\n  padding-top: 25px;\n}\n\n.menu-background {\n  display: grid;\n  grid-template-columns: 1fr 1fr;\n  background: rgba(131, 133, 131, 0.925);\n  border: 5px solid rgba(100, 236, 37, 0.933);\n  border-radius: 20px;\n  padding-bottom: 1em;\n  margin-bottom: 2em;\n  color: black;\n}\n\n.menu-item {\n  padding: 20px 20px 0 20px;\n}\n\n.menu-background img {\n  width: 300px;\n  height: 200px;\n}\n\n.menu-item p {\n  text-align: center;\n  padding-top: 10px;\n  font-size: 1.2em;\n}\n\n.contact-section {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: center;\n  width: 60%;\n  background: rgba(131, 133, 131, 0.925);\n  border: 5px solid rgba(100, 236, 37, 0.933);\n  border-radius: 20px;\n}\n\n.contact-section p {\n  text-align: center;\n  padding: 20px 0;\n  font-size: 1.2em;\n}\n\n@media (max-width: 768px) {\n  .menu-background {\n    display: grid;\n    grid-template-columns: 1fr;\n  }\n}", "",{"version":3,"sources":["webpack://./src/css/style.scss"],"names":[],"mappings":"AAEA;EACE,UAAA;EACA,SAAA;EACA,sBAAA;AADF;;AAIA;EACE,0EAAA;EACA,sBAAA;EACA,gBAAA;AADF;;AAIA;EACE,eAAA;EACA,sCAAA;EACA,2CAAA;EACA,mBAAA;EACA,mBAAA;EACA,eAAA;EACA,kBAAA;EACA,UAAA;AADF;AAEE;EACE,UAAA;EACA,cAAA;EACA,iBAAA;AAAJ;;AAIA;EACE,aAAA;EACA,8BAAA;EACA,sCAAA;EACA,2CAAA;EACA,mBAAA;EACA,mBAAA;EACA,kBAAA;EACA,YAAA;AADF;;AAIA;EACE,yBAAA;AADF;;AAIA;EACE,YAAA;EACA,aAAA;AADF;;AAIA;EACE,kBAAA;EACA,iBAAA;EACA,gBAAA;AADF;;AAIA;EACE,aAAA;EACA,sBAAA;EACA,mBAAA;EACA,uBAAA;EACA,UAAA;EACA,sCAAA;EACA,2CAAA;EACA,mBAAA;AADF;;AAIA;EACE,kBAAA;EACA,eAAA;EACA,gBAAA;AADF;;AAIA;EACE;IACE,aAAA;IACA,0BAAA;EADF;AACF","sourcesContent":["$bg-color: darkgoldenrod;\n\n* {\n  padding: 0;\n  margin: 0;\n  box-sizing: border-box;\n}\n\nbody {\n  background: url(\"../images/restaurant.jpeg\") no-repeat center fixed;\n  background-size: cover;\n  color: aliceblue;\n}\n\n.main {\n  max-width: 100%;\n  background: rgba(131, 133, 131, 0.925);\n  border: 5px solid rgba(100, 236, 37, 0.933);\n  border-radius: 20px;\n  padding-bottom: 1em;\n  margin-top: 15%;\n  margin-bottom: 2em;\n  z-index: 0;\n  .main-div {\n    width: 50%;\n    margin: 0 auto;\n    padding-top: 25px;\n  }\n}\n\n.menu-background {\n  display: grid;\n  grid-template-columns: 1fr 1fr;\n  background: rgba(131, 133, 131, 0.925);\n  border: 5px solid rgba(100, 236, 37, 0.933);\n  border-radius: 20px;\n  padding-bottom: 1em;\n  margin-bottom: 2em;\n  color: black;\n}\n\n.menu-item {\n  padding: 20px 20px 0 20px;\n}\n\n.menu-background img {\n  width: 300px;\n  height: 200px;\n}\n\n.menu-item p {\n  text-align: center;\n  padding-top: 10px;\n  font-size: 1.2em;\n}\n\n.contact-section {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: center;\n  width: 60%;\n  background: rgba(131, 133, 131, 0.925);\n  border: 5px solid rgba(100, 236, 37, 0.933);\n  border-radius: 20px;\n}\n\n.contact-section p {\n  text-align: center;\n  padding: 20px 0;\n  font-size: 1.2em;\n}\n\n@media (max-width: 768px) {\n  .menu-background {\n    display: grid;\n    grid-template-columns: 1fr;\n  }\n}\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -141,6 +147,63 @@ module.exports = function cssWithMappingToString(item) {
 
   return [content].join("\n");
 };
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/runtime/getUrl.js":
+/*!********************************************************!*\
+  !*** ./node_modules/css-loader/dist/runtime/getUrl.js ***!
+  \********************************************************/
+/***/ ((module) => {
+
+
+
+module.exports = function (url, options) {
+  if (!options) {
+    // eslint-disable-next-line no-param-reassign
+    options = {};
+  } // eslint-disable-next-line no-underscore-dangle, no-param-reassign
+
+
+  url = url && url.__esModule ? url.default : url;
+
+  if (typeof url !== "string") {
+    return url;
+  } // If url is already wrapped in quotes, remove them
+
+
+  if (/^['"].*['"]$/.test(url)) {
+    // eslint-disable-next-line no-param-reassign
+    url = url.slice(1, -1);
+  }
+
+  if (options.hash) {
+    // eslint-disable-next-line no-param-reassign
+    url += options.hash;
+  } // Should url be wrapped?
+  // See https://drafts.csswg.org/css-values-3/#urls
+
+
+  if (/["'() \t\n]/.test(url) || options.needQuotes) {
+    return "\"".concat(url.replace(/"/g, '\\"').replace(/\n/g, "\\n"), "\"");
+  }
+
+  return url;
+};
+
+/***/ }),
+
+/***/ "./src/images/restaurant.jpeg":
+/*!************************************!*\
+  !*** ./src/images/restaurant.jpeg ***!
+  \************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "932af09520208f64b02bafa6f7f31ef0.jpeg");
 
 /***/ }),
 
@@ -468,14 +531,14 @@ const createContact = (container) => {
 
 const createTitle = () => {
 	const title = document.createElement('h3');
-	title.classList.add('title-header');
+	title.classList.add('title-header', "text-center", "py-5");
 	title.textContent = "Contact";
 	return title;
 };
 
 const createContactSection = () => {
 	const container = document.createElement('div');
-	container.classList.add("contact-section");
+	container.classList.add("contact-section", "mx-auto");
 	const phone = document.createElement("p");
 	phone.textContent = "Phone: ###-####-####";
 	const email = document.createElement("p");
@@ -503,27 +566,25 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
+/* harmony import */ var _menu__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./menu */ "./src/menu.js");
+
 
 const homeFunc = (container) => {
   const main = document.createElement('div');
   main.classList.add('main', 'text-light');
   const mainDiv = document.createElement('div');
-  mainDiv.classList.add('main-div');
+  mainDiv.classList.add('main-div', 'text-center');
   const heading = document.createElement('h1');
   heading.classList.add('home');
   heading.textContent = 'Kenz Restaurant'
   const paragraph = document.createElement('p');
   paragraph.classList.add('home-para');
   paragraph.textContent = 'Welcome to the home of your favourite delicacies. We serve the best in town. what you eat is what you\'re made of'
-  const btn = document.createElement('button');
-  btn.textContent = 'Menu';
-  btn.classList.add('btn-menu', 'btn', 'btn-danger');
   
   mainDiv.appendChild(heading);
   mainDiv.appendChild(paragraph);
-  mainDiv.appendChild(btn);
   main.appendChild(mainDiv);
-  
+
   container.appendChild(main);
 }
 
@@ -561,7 +622,7 @@ function MenuItem(name, src) {
   
   const createTitle = () => {
 	const title = document.createElement("h3");
-	title.classList.add("title-header");
+	title.classList.add("title-header", "text-center", "py-4");
 	title.innerText = "Menu";
 	return title;
   };
@@ -577,7 +638,7 @@ function MenuItem(name, src) {
   
   const createMenuItem = ({ name, src }) => {
 	const container = document.createElement("div");
-	container.classList.add("menu-item");
+	container.classList.add("menu-item", "mx-auto");
   
 	const img = document.createElement("img");
 	img.src = src;
@@ -627,13 +688,13 @@ const navbar = (content, container) => {
   const t_nav = document.createElement('div');
 
 
-  f_nav.classList.add('home', 'tab', 'nav-style');
+  f_nav.classList.add('home');
   f_nav.id = 'fn';
   f_nav.textContent = 'Home';
-  s_nav.classList.add('menu', 'tab', 'nav-style');
+  s_nav.classList.add('menu');
   s_nav.id = 'sn';
   s_nav.textContent = 'Menu';
-  t_nav.classList.add('contact', 'tab', 'nav-style');
+  t_nav.classList.add('contact');
   t_nav.id = 'tn';
   t_nav.textContent = 'Contact';
 
@@ -713,6 +774,18 @@ const navbar = (content, container) => {
 /******/ 		};
 /******/ 	})();
 /******/ 	
+/******/ 	/* webpack/runtime/global */
+/******/ 	(() => {
+/******/ 		__webpack_require__.g = (function() {
+/******/ 			if (typeof globalThis === 'object') return globalThis;
+/******/ 			try {
+/******/ 				return this || new Function('return this')();
+/******/ 			} catch (e) {
+/******/ 				if (typeof window === 'object') return window;
+/******/ 			}
+/******/ 		})();
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	(() => {
 /******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
@@ -727,6 +800,26 @@ const navbar = (content, container) => {
 /******/ 			}
 /******/ 			Object.defineProperty(exports, '__esModule', { value: true });
 /******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/publicPath */
+/******/ 	(() => {
+/******/ 		var scriptUrl;
+/******/ 		if (__webpack_require__.g.importScripts) scriptUrl = __webpack_require__.g.location + "";
+/******/ 		var document = __webpack_require__.g.document;
+/******/ 		if (!scriptUrl && document) {
+/******/ 			if (document.currentScript)
+/******/ 				scriptUrl = document.currentScript.src
+/******/ 			if (!scriptUrl) {
+/******/ 				var scripts = document.getElementsByTagName("script");
+/******/ 				if(scripts.length) scriptUrl = scripts[scripts.length - 1].src
+/******/ 			}
+/******/ 		}
+/******/ 		// When supporting browsers where an automatic publicPath is not supported you must specify an output.publicPath manually via configuration
+/******/ 		// or pass an empty string ("") and set the __webpack_public_path__ variable from your code to use your own logic.
+/******/ 		if (!scriptUrl) throw new Error("Automatic publicPath is not supported in this browser");
+/******/ 		scriptUrl = scriptUrl.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/");
+/******/ 		__webpack_require__.p = scriptUrl;
 /******/ 	})();
 /******/ 	
 /************************************************************************/
