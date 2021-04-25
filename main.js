@@ -502,7 +502,7 @@ const createContactSection = () => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "homeFunc": () => (/* binding */ homeFunc)
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 
 const homeFunc = () => {
@@ -528,7 +528,7 @@ const homeFunc = () => {
   content.appendChild(main);
 }
 
-
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (homeFunc);
 
 /***/ }),
 
@@ -605,14 +605,28 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "navbar": () => (/* binding */ navbar)
 /* harmony export */ });
-const content = document.querySelector('#content');
+/* harmony import */ var _home__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./home */ "./src/home.js");
+/* harmony import */ var _contact__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./contact */ "./src/contact.js");
+/* harmony import */ var _menu__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./menu */ "./src/menu.js");
 
-const navbar = () => {
+
+
+
+const container = document.querySelector('.contain');
+
+function removeAllChildNodes(parent) {
+  while (parent.firstChild) {
+    parent.removeChild(parent.firstChild);
+  }
+}
+
+const navbar = (content) => {
   const nav = document.createElement('nav');
   nav.classList.add('w-100', 'px-4', 'py-3', 'nav-bar', 'd-flex', 'justify-content-around', 'bg-light', 'text-dark');
   const f_nav = document.createElement('div');
   const s_nav = document.createElement('div');
   const t_nav = document.createElement('div');
+
 
   f_nav.classList.add('home', 'tab', 'nav-style');
   f_nav.id = 'fn';
@@ -624,21 +638,25 @@ const navbar = () => {
   t_nav.id = 'tn';
   t_nav.textContent = 'Contact';
 
-//   f_nav.addEventListener('click', () => {
-//     alert('this is testin home');
-//   })
-//   s_nav.addEventListener('click', () => {
-// 	alert('thyisis second');
-//   })
-//   t_nav.addEventListener('click', () => {
-// 	t_nav.classList.add('contact');
-//   })
-
   nav.appendChild(f_nav);
   nav.appendChild(s_nav);
   nav.appendChild(t_nav);
   
   content.appendChild(nav);
+  content.appendChild(container);
+
+  f_nav.addEventListener('click', () => {
+    removeAllChildNodes(container);
+    container.appendChild((0,_home__WEBPACK_IMPORTED_MODULE_0__.default)());
+  })
+  s_nav.addEventListener('click', () => {
+    removeAllChildNodes(container);
+	  container.appendChild((0,_menu__WEBPACK_IMPORTED_MODULE_2__.createMenu)());
+  })
+  t_nav.addEventListener('click', () => {
+    removeAllChildNodes(container);
+	  container.appendChild((0,_contact__WEBPACK_IMPORTED_MODULE_1__.createContact)());
+  })
 }
 
 
@@ -733,11 +751,26 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const content = document.querySelector('#content');
+_nav__WEBPACK_IMPORTED_MODULE_1__.navbar(content);
+// navBarSetup();
 
-_nav__WEBPACK_IMPORTED_MODULE_1__.navbar();
-(0,_home__WEBPACK_IMPORTED_MODULE_2__.homeFunc)();
-(0,_contact_js__WEBPACK_IMPORTED_MODULE_3__.createContact)();
-(0,_menu_js__WEBPACK_IMPORTED_MODULE_4__.createMenu)();
+const container = document.createElement('div');
+container.classList.add('contain');
+content.appendChild(container);
+
+container.appendChild((0,_home__WEBPACK_IMPORTED_MODULE_2__.default)());
+
+// const navBarSetup = () => {
+// 	const home = document.querySelector("#Home");
+// 	home.addEventListener("click", homeFunc);
+// 	const menu = document.querySelector("#Menu");
+// 	menu.addEventListener("click", createMenu);
+// 	const contact = document.querySelector("#Contact");
+// 	contact.addEventListener("click", createContact);
+// };
+
+// createContact();
+// createMenu();
 })();
 
 /******/ })()
