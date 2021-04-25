@@ -22,4 +22,4 @@ const homeFunc = () => {
   content.appendChild(main);
 }
 
-export {homeFunc};
+export default homeFunc;
