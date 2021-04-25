@@ -18,7 +18,7 @@ function MenuItem(name, src) {
   
   const createTitle = () => {
 	const title = document.createElement("h3");
-	title.classList.add("title-header");
+	title.classList.add("title-header", "text-center", "py-4");
 	title.innerText = "Menu";
 	return title;
   };
@@ -34,7 +34,7 @@ function MenuItem(name, src) {
   
   const createMenuItem = ({ name, src }) => {
 	const container = document.createElement("div");
-	container.classList.add("menu-item");
+	container.classList.add("menu-item", "mx-auto");
   
 	const img = document.createElement("img");
 	img.src = src;

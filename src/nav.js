@@ -18,13 +18,13 @@ const navbar = (content, container) => {
   const t_nav = document.createElement('div');
 
 
-  f_nav.classList.add('home', 'tab', 'nav-style');
+  f_nav.classList.add('home');
   f_nav.id = 'fn';
   f_nav.textContent = 'Home';
-  s_nav.classList.add('menu', 'tab', 'nav-style');
+  s_nav.classList.add('menu');
   s_nav.id = 'sn';
   s_nav.textContent = 'Menu';
-  t_nav.classList.add('contact', 'tab', 'nav-style');
+  t_nav.classList.add('contact');
   t_nav.id = 'tn';
   t_nav.textContent = 'Contact';
 

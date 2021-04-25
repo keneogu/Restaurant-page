@@ -5,14 +5,14 @@ const createContact = (container) => {
 
 const createTitle = () => {
 	const title = document.createElement('h3');
-	title.classList.add('title-header');
+	title.classList.add('title-header', "text-center", "py-5");
 	title.textContent = "Contact";
 	return title;
 };
 
 const createContactSection = () => {
 	const container = document.createElement('div');
-	container.classList.add("contact-section");
+	container.classList.add("contact-section", "mx-auto");
 	const phone = document.createElement("p");
 	phone.textContent = "Phone: ###-####-####";
 	const email = document.createElement("p");
