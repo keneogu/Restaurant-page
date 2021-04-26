@@ -193,6 +193,48 @@ module.exports = function (url, options) {
 
 /***/ }),
 
+/***/ "./src/images/chicken.jpg":
+/*!********************************!*\
+  !*** ./src/images/chicken.jpg ***!
+  \********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "004b639dd1d07b8a30c27d8b66a9286d.jpg");
+
+/***/ }),
+
+/***/ "./src/images/food.jpeg":
+/*!******************************!*\
+  !*** ./src/images/food.jpeg ***!
+  \******************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "61e6e5f4295dcfa06eea6e125aefc349.jpeg");
+
+/***/ }),
+
+/***/ "./src/images/jollof.jpeg":
+/*!********************************!*\
+  !*** ./src/images/jollof.jpeg ***!
+  \********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "25b7c0905ac46daca7711ae1da9ac875.jpeg");
+
+/***/ }),
+
 /***/ "./src/images/restaurant.jpeg":
 /*!************************************!*\
   !*** ./src/images/restaurant.jpeg ***!
@@ -204,6 +246,20 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "932af09520208f64b02bafa6f7f31ef0.jpeg");
+
+/***/ }),
+
+/***/ "./src/images/veg.jpeg":
+/*!*****************************!*\
+  !*** ./src/images/veg.jpeg ***!
+  \*****************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__webpack_require__.p + "3e7f83dab6c812eac7d78012009f8787.jpeg");
 
 /***/ }),
 
@@ -599,16 +655,25 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
+/* harmony import */ var _images_chicken_jpg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./images/chicken.jpg */ "./src/images/chicken.jpg");
+/* harmony import */ var _images_food_jpeg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./images/food.jpeg */ "./src/images/food.jpeg");
+/* harmony import */ var _images_jollof_jpeg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./images/jollof.jpeg */ "./src/images/jollof.jpeg");
+/* harmony import */ var _images_veg_jpeg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./images/veg.jpeg */ "./src/images/veg.jpeg");
+
+
+
+
+
 function MenuItem(name, src) {
   this.name = name;
   this.src = src;
 }
 
 const menu = [
-  new MenuItem('Simple Cheese', '../src/images/chicken.jpg'),
-  new MenuItem('Mixed Foods', '../src/images/food.jpeg'),
-  new MenuItem('Nigerian Jollof Rice', '../src/images/Nigerian-Jollof.jpeg'),
-  new MenuItem('Vegetable Meal', '../src/images/veg.jpeg'),
+  new MenuItem('Simple Cheese', _images_chicken_jpg__WEBPACK_IMPORTED_MODULE_0__.default),
+  new MenuItem('Mixed Foods', _images_food_jpeg__WEBPACK_IMPORTED_MODULE_1__.default),
+  new MenuItem('Nigerian Jollof Rice', _images_jollof_jpeg__WEBPACK_IMPORTED_MODULE_2__.default),
+  new MenuItem('Vegetable Meal', _images_veg_jpeg__WEBPACK_IMPORTED_MODULE_3__.default),
 ];
 
 const createMenuItem = ({ name, src }) => {

@@ -20,11 +20,14 @@ To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
+Text editor
+Get a browser like chrome or firefox in their recent versions
 Node.js
+Mode Package Manager
 
 ### Setup
 
-- Clone the repository in the folder of your choice:<br> 
+- Clone the repository in the folder of your choice:<br>
 - Install required dependencies `npm install`
 
 ### Usage
