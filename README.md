@@ -4,7 +4,7 @@
 
 <p align="center">
   
-  <img src="./assets/img/screenshot.png" >
+  <img src="../src/images/screenshot.png" >
   
 </p>
 
