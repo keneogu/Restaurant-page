@@ -4,9 +4,7 @@ import homeFunc from './home';
 
 const content = document.querySelector('#content');
 const container = document.createElement('div');
-container.classList.add('main-container')
+container.classList.add('main-container');
 navbar(content, container);
 content.appendChild(container);
 homeFunc(container);
-
-

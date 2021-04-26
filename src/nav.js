@@ -1,6 +1,6 @@
-import homeFunc from "./home";
-import { createContact } from "./contact";
-import { createMenu } from "./menu";
+import homeFunc from './home';
+import createContact from './contact';
+import createMenu from './menu';
 
 // const container = document.querySelector('.contain');
 
@@ -13,40 +13,39 @@ function removeAllChildNodes(parent) {
 const navbar = (content, container) => {
   const nav = document.createElement('nav');
   nav.classList.add('w-100', 'px-4', 'py-3', 'nav-bar', 'd-flex', 'justify-content-around', 'bg-light', 'text-dark');
-  const f_nav = document.createElement('div');
-  const s_nav = document.createElement('div');
-  const t_nav = document.createElement('div');
+  const homeNav = document.createElement('div');
+  const menuNav = document.createElement('div');
+  const contactNav = document.createElement('div');
 
+  homeNav.classList.add('home');
+  homeNav.id = 'fn';
+  homeNav.textContent = 'Home';
+  menuNav.classList.add('menu');
+  menuNav.id = 'sn';
+  menuNav.textContent = 'Menu';
+  contactNav.classList.add('contact');
+  contactNav.id = 'tn';
+  contactNav.textContent = 'Contact';
 
-  f_nav.classList.add('home');
-  f_nav.id = 'fn';
-  f_nav.textContent = 'Home';
-  s_nav.classList.add('menu');
-  s_nav.id = 'sn';
-  s_nav.textContent = 'Menu';
-  t_nav.classList.add('contact');
-  t_nav.id = 'tn';
-  t_nav.textContent = 'Contact';
+  nav.appendChild(homeNav);
+  nav.appendChild(menuNav);
+  nav.appendChild(contactNav);
 
-  nav.appendChild(f_nav);
-  nav.appendChild(s_nav);
-  nav.appendChild(t_nav);
-  
   content.appendChild(nav);
   content.appendChild(container);
 
-  f_nav.addEventListener('click', () => {
+  homeNav.addEventListener('click', () => {
     removeAllChildNodes(container);
-    homeFunc(container)
-  })
-  s_nav.addEventListener('click', () => {
+    homeFunc(container);
+  });
+  menuNav.addEventListener('click', () => {
     removeAllChildNodes(container);
-   createMenu(container)
-  })
-  t_nav.addEventListener('click', () => {
+    createMenu(container);
+  });
+  contactNav.addEventListener('click', () => {
     removeAllChildNodes(container);
-   createContact(container)
-  })
-}
+    createContact(container);
+  });
+};
 
-export default navbar
+export default navbar;
