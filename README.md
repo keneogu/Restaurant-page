@@ -2,11 +2,9 @@
 
 > This project is a restaurant webpage built with JavaScript by manipulating the Document object model(DOM) to create a dynamic webpage.
 
-<p align="center">
-  
-  <img src="../src/images/screenshot.png" >
-  
-</p>
+## Screenshot
+
+![App screenshot](src/images/screenshot.png)
 
 ## Built With
 
