@@ -33,7 +33,7 @@ Node.js
 
 ### Deployment
 
-[restaurant-js](https://ashakae.github.io/restaurant/)
+[restaurant-js](https://keneogu.github.io/Restaurant-page/)
 
 👤 **Kenechukwu Oguagbaka**
 
