@@ -42,7 +42,6 @@ const createMenuBackground = () => {
 };
 
 const createMenu = (container) => {
-  // const content = document.querySelector('#content');
   container.append(createTitle());
   container.append(createMenuBackground());
 };

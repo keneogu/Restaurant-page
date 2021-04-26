@@ -643,7 +643,6 @@ const createMenuBackground = () => {
 };
 
 const createMenu = (container) => {
-  // const content = document.querySelector('#content');
   container.append(createTitle());
   container.append(createMenuBackground());
 };
@@ -668,8 +667,6 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-
-// const container = document.querySelector('.contain');
 
 function removeAllChildNodes(parent) {
   while (parent.firstChild) {

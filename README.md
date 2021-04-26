@@ -2,6 +2,12 @@
 
 > This project is a restaurant webpage built with JavaScript by manipulating the Document object model(DOM) to create a dynamic webpage.
 
+<p align="center">
+  
+  <img src="./assets/img/screenshot.png" >
+  
+</p>
+
 ## Built With
 
 - JavaScript
@@ -26,6 +32,10 @@ Node.js
 ### Usage
 
 - open the `index.html` in dist folder
+
+### Deployment
+
+[restaurant-js](https://ashakae.github.io/restaurant/)
 
 👤 **Kenechukwu Oguagbaka**
 
