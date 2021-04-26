@@ -27,7 +27,7 @@ __webpack_require__.r(__webpack_exports__);
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0___default()));
 var ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(_images_restaurant_jpeg__WEBPACK_IMPORTED_MODULE_3__.default);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "* {\n  padding: 0;\n  margin: 0;\n  box-sizing: border-box;\n}\n\nbody {\n  background: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ") no-repeat center fixed;\n  background-size: cover;\n  color: aliceblue;\n}\n\n.main {\n  max-width: 100%;\n  background: rgba(131, 133, 131, 0.925);\n  border: 5px solid rgba(100, 236, 37, 0.933);\n  border-radius: 20px;\n  padding-bottom: 1em;\n  margin-top: 15%;\n  margin-bottom: 2em;\n  z-index: 0;\n}\n.main .main-div {\n  width: 50%;\n  margin: 0 auto;\n  padding-top: 25px;\n}\n\n.menu-background {\n  display: grid;\n  grid-template-columns: 1fr 1fr;\n  background: rgba(131, 133, 131, 0.925);\n  border: 5px solid rgba(100, 236, 37, 0.933);\n  border-radius: 20px;\n  padding-bottom: 1em;\n  margin-bottom: 2em;\n  color: black;\n}\n\n.menu-item {\n  padding: 20px 20px 0 20px;\n}\n\n.menu-background img {\n  width: 300px;\n  height: 200px;\n}\n\n.menu-item p {\n  text-align: center;\n  padding-top: 10px;\n  font-size: 1.2em;\n}\n\n.contact-section {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: center;\n  width: 60%;\n  background: rgba(131, 133, 131, 0.925);\n  border: 5px solid rgba(100, 236, 37, 0.933);\n  border-radius: 20px;\n}\n\n.contact-section p {\n  text-align: center;\n  padding: 20px 0;\n  font-size: 1.2em;\n}\n\n@media (max-width: 768px) {\n  .menu-background {\n    display: grid;\n    grid-template-columns: 1fr;\n  }\n}", "",{"version":3,"sources":["webpack://./src/css/style.scss"],"names":[],"mappings":"AAEA;EACE,UAAA;EACA,SAAA;EACA,sBAAA;AADF;;AAIA;EACE,0EAAA;EACA,sBAAA;EACA,gBAAA;AADF;;AAIA;EACE,eAAA;EACA,sCAAA;EACA,2CAAA;EACA,mBAAA;EACA,mBAAA;EACA,eAAA;EACA,kBAAA;EACA,UAAA;AADF;AAEE;EACE,UAAA;EACA,cAAA;EACA,iBAAA;AAAJ;;AAIA;EACE,aAAA;EACA,8BAAA;EACA,sCAAA;EACA,2CAAA;EACA,mBAAA;EACA,mBAAA;EACA,kBAAA;EACA,YAAA;AADF;;AAIA;EACE,yBAAA;AADF;;AAIA;EACE,YAAA;EACA,aAAA;AADF;;AAIA;EACE,kBAAA;EACA,iBAAA;EACA,gBAAA;AADF;;AAIA;EACE,aAAA;EACA,sBAAA;EACA,mBAAA;EACA,uBAAA;EACA,UAAA;EACA,sCAAA;EACA,2CAAA;EACA,mBAAA;AADF;;AAIA;EACE,kBAAA;EACA,eAAA;EACA,gBAAA;AADF;;AAIA;EACE;IACE,aAAA;IACA,0BAAA;EADF;AACF","sourcesContent":["$bg-color: darkgoldenrod;\n\n* {\n  padding: 0;\n  margin: 0;\n  box-sizing: border-box;\n}\n\nbody {\n  background: url(\"../images/restaurant.jpeg\") no-repeat center fixed;\n  background-size: cover;\n  color: aliceblue;\n}\n\n.main {\n  max-width: 100%;\n  background: rgba(131, 133, 131, 0.925);\n  border: 5px solid rgba(100, 236, 37, 0.933);\n  border-radius: 20px;\n  padding-bottom: 1em;\n  margin-top: 15%;\n  margin-bottom: 2em;\n  z-index: 0;\n  .main-div {\n    width: 50%;\n    margin: 0 auto;\n    padding-top: 25px;\n  }\n}\n\n.menu-background {\n  display: grid;\n  grid-template-columns: 1fr 1fr;\n  background: rgba(131, 133, 131, 0.925);\n  border: 5px solid rgba(100, 236, 37, 0.933);\n  border-radius: 20px;\n  padding-bottom: 1em;\n  margin-bottom: 2em;\n  color: black;\n}\n\n.menu-item {\n  padding: 20px 20px 0 20px;\n}\n\n.menu-background img {\n  width: 300px;\n  height: 200px;\n}\n\n.menu-item p {\n  text-align: center;\n  padding-top: 10px;\n  font-size: 1.2em;\n}\n\n.contact-section {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: center;\n  width: 60%;\n  background: rgba(131, 133, 131, 0.925);\n  border: 5px solid rgba(100, 236, 37, 0.933);\n  border-radius: 20px;\n}\n\n.contact-section p {\n  text-align: center;\n  padding: 20px 0;\n  font-size: 1.2em;\n}\n\n@media (max-width: 768px) {\n  .menu-background {\n    display: grid;\n    grid-template-columns: 1fr;\n  }\n}\n"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, "* {\n  padding: 0;\n  margin: 0;\n  box-sizing: border-box;\n}\n\nbody {\n  background: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ") no-repeat center fixed;\n  background-size: cover;\n  color: aliceblue;\n}\n\n.main {\n  max-width: 100%;\n  background: rgba(131, 133, 131, 0.925);\n  border: 5px solid rgba(100, 236, 37, 0.933);\n  border-radius: 20px;\n  padding-bottom: 1em;\n  margin-top: 15%;\n  margin-bottom: 2em;\n  z-index: 0;\n}\n.main .main-div {\n  width: 50%;\n  margin: 0 auto;\n  padding-top: 25px;\n}\n\n.menu-background {\n  display: grid;\n  grid-template-columns: 1fr 1fr;\n  background: rgba(131, 133, 131, 0.925);\n  border: 5px solid rgba(100, 236, 37, 0.933);\n  border-radius: 20px;\n  padding-bottom: 1em;\n  margin-bottom: 2em;\n  color: black;\n}\n\n.menu-item {\n  padding: 20px 20px 0 20px;\n}\n\n.menu-background img {\n  width: 300px;\n  height: 200px;\n}\n\n.menu-item p {\n  text-align: center;\n  padding-top: 10px;\n  font-size: 1.2em;\n}\n\n.contact-section {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: center;\n  width: 60%;\n  background: rgba(131, 133, 131, 0.925);\n  border: 5px solid rgba(100, 236, 37, 0.933);\n  border-radius: 20px;\n}\n\n.contact-section p {\n  text-align: center;\n  padding: 20px 0;\n  font-size: 1.2em;\n}\n\n@media (max-width: 768px) {\n  .menu-background {\n    display: grid;\n    grid-template-columns: 1fr;\n  }\n}", "",{"version":3,"sources":["webpack://./src/css/style.scss"],"names":[],"mappings":"AAEA;EACE,UAAA;EACA,SAAA;EACA,sBAAA;AADF;;AAIA;EACE,0EAAA;EACA,sBAAA;EACA,gBAAA;AADF;;AAIA;EACE,eAAA;EACA,sCAAA;EACA,2CAAA;EACA,mBAAA;EACA,mBAAA;EACA,eAAA;EACA,kBAAA;EACA,UAAA;AADF;AAGE;EACE,UAAA;EACA,cAAA;EACA,iBAAA;AADJ;;AAKA;EACE,aAAA;EACA,8BAAA;EACA,sCAAA;EACA,2CAAA;EACA,mBAAA;EACA,mBAAA;EACA,kBAAA;EACA,YAAA;AAFF;;AAKA;EACE,yBAAA;AAFF;;AAKA;EACE,YAAA;EACA,aAAA;AAFF;;AAKA;EACE,kBAAA;EACA,iBAAA;EACA,gBAAA;AAFF;;AAKA;EACE,aAAA;EACA,sBAAA;EACA,mBAAA;EACA,uBAAA;EACA,UAAA;EACA,sCAAA;EACA,2CAAA;EACA,mBAAA;AAFF;;AAKA;EACE,kBAAA;EACA,eAAA;EACA,gBAAA;AAFF;;AAKA;EACE;IACE,aAAA;IACA,0BAAA;EAFF;AACF","sourcesContent":["$bg-color: darkgoldenrod;\n\n* {\n  padding: 0;\n  margin: 0;\n  box-sizing: border-box;\n}\n\nbody {\n  background: url(\"../images/restaurant.jpeg\") no-repeat center fixed;\n  background-size: cover;\n  color: aliceblue;\n}\n\n.main {\n  max-width: 100%;\n  background: rgba(131, 133, 131, 0.925);\n  border: 5px solid rgba(100, 236, 37, 0.933);\n  border-radius: 20px;\n  padding-bottom: 1em;\n  margin-top: 15%;\n  margin-bottom: 2em;\n  z-index: 0;\n\n  .main-div {\n    width: 50%;\n    margin: 0 auto;\n    padding-top: 25px;\n  }\n}\n\n.menu-background {\n  display: grid;\n  grid-template-columns: 1fr 1fr;\n  background: rgba(131, 133, 131, 0.925);\n  border: 5px solid rgba(100, 236, 37, 0.933);\n  border-radius: 20px;\n  padding-bottom: 1em;\n  margin-bottom: 2em;\n  color: black;\n}\n\n.menu-item {\n  padding: 20px 20px 0 20px;\n}\n\n.menu-background img {\n  width: 300px;\n  height: 200px;\n}\n\n.menu-item p {\n  text-align: center;\n  padding-top: 10px;\n  font-size: 1.2em;\n}\n\n.contact-section {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: center;\n  width: 60%;\n  background: rgba(131, 133, 131, 0.925);\n  border: 5px solid rgba(100, 236, 37, 0.933);\n  border-radius: 20px;\n}\n\n.contact-section p {\n  text-align: center;\n  padding: 20px 0;\n  font-size: 1.2em;\n}\n\n@media (max-width: 768px) {\n  .menu-background {\n    display: grid;\n    grid-template-columns: 1fr;\n  }\n}\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -522,37 +522,37 @@ module.exports = function (list, options) {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "createContact": () => (/* binding */ createContact)
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
+const createTitle = () => {
+  const title = document.createElement('h3');
+  title.classList.add('title-header', 'text-center', 'py-5');
+  title.textContent = 'Contact';
+  return title;
+};
+
+const createContactSection = () => {
+  const container = document.createElement('div');
+  container.classList.add('contact-section', 'mx-auto');
+  const phone = document.createElement('p');
+  phone.textContent = 'Phone: ###-####-####';
+  const email = document.createElement('p');
+  email.textContent = 'Email: email@email.com';
+  const location = document.createElement('p');
+  location.textContent = 'Location: 1337 Place, Location, LC';
+  container.append(phone);
+  container.append(email);
+  container.append(location);
+
+  return container;
+};
+
 const createContact = (container) => {
   container.append(createTitle());
   container.append(createContactSection());
 };
 
-const createTitle = () => {
-	const title = document.createElement('h3');
-	title.classList.add('title-header', "text-center", "py-5");
-	title.textContent = "Contact";
-	return title;
-};
-
-const createContactSection = () => {
-	const container = document.createElement('div');
-	container.classList.add("contact-section", "mx-auto");
-	const phone = document.createElement("p");
-	phone.textContent = "Phone: ###-####-####";
-	const email = document.createElement("p");
-	email.textContent = 'Email: email@email.com';
-	const location = document.createElement("p");
-	location.textContent = "Location: 1337 Place, Location, LC";
-	container.append(phone);
-	container.append(email);
-	container.append(location);
-
-	return container;
-}
-
-
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (createContact);
 
 /***/ }),
 
@@ -566,9 +566,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _menu__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./menu */ "./src/menu.js");
-
-
 const homeFunc = (container) => {
   const main = document.createElement('div');
   main.classList.add('main', 'text-light');
@@ -576,17 +573,17 @@ const homeFunc = (container) => {
   mainDiv.classList.add('main-div', 'text-center');
   const heading = document.createElement('h1');
   heading.classList.add('home');
-  heading.textContent = 'Kenz Restaurant'
+  heading.textContent = 'Kenz Restaurant';
   const paragraph = document.createElement('p');
   paragraph.classList.add('home-para');
-  paragraph.textContent = 'Welcome to the home of your favourite delicacies. We serve the best in town. what you eat is what you\'re made of'
-  
+  paragraph.textContent = 'Welcome to the home of your favourite delicacies. We serve the best in town. what you eat is what you\'re made of';
+
   mainDiv.appendChild(heading);
   mainDiv.appendChild(paragraph);
   main.appendChild(mainDiv);
 
   container.appendChild(main);
-}
+};
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (homeFunc);
 
@@ -600,58 +597,58 @@ const homeFunc = (container) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "createMenu": () => (/* binding */ createMenu)
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 function MenuItem(name, src) {
-	this.name = name;
-	this.src = src;
-  }
-  
-  const menu = [
-	new MenuItem("Simple Cheese", "../src/images/meat-poriedge.jpeg"),
-	new MenuItem("Mixed Foods", "../src/images/food.jpeg"),
-	new MenuItem("Nigerian Jollof Rice", "../src/images/Nigerian-Jollof.jpeg"),
-	new MenuItem("Vegetable Meal", "../src/images/veg.jpeg"),
-  ];
-  
-  const createMenu = (container) => {
-	// const content = document.querySelector('#content');
-	container.append(createTitle());
-	container.append(createMenuBackground());
-  };
-  
-  const createTitle = () => {
-	const title = document.createElement("h3");
-	title.classList.add("title-header", "text-center", "py-4");
-	title.innerText = "Menu";
-	return title;
-  };
-  
-  const createMenuBackground = () => {
-	const background = document.createElement("div");
-	background.classList.add("menu-background");
-	menu.forEach((item) => {
-	  background.append(createMenuItem(item));
-	});
-	return background;
-  };
-  
-  const createMenuItem = ({ name, src }) => {
-	const container = document.createElement("div");
-	container.classList.add("menu-item", "mx-auto");
-  
-	const img = document.createElement("img");
-	img.src = src;
-	container.append(img);
-  
-	const p = document.createElement("p");
-	p.innerText = name;
-	container.append(p);
-  
-	return container;
-  };
-  
-  
+  this.name = name;
+  this.src = src;
+}
+
+const menu = [
+  new MenuItem('Simple Cheese', '../src/images/meat-poriedge.jpeg'),
+  new MenuItem('Mixed Foods', '../src/images/food.jpeg'),
+  new MenuItem('Nigerian Jollof Rice', '../src/images/Nigerian-Jollof.jpeg'),
+  new MenuItem('Vegetable Meal', '../src/images/veg.jpeg'),
+];
+
+const createMenuItem = ({ name, src }) => {
+  const container = document.createElement('div');
+  container.classList.add('menu-item', 'mx-auto');
+
+  const img = document.createElement('img');
+  img.src = src;
+  container.append(img);
+
+  const p = document.createElement('p');
+  p.innerText = name;
+  container.append(p);
+
+  return container;
+};
+
+const createTitle = () => {
+  const title = document.createElement('h3');
+  title.classList.add('title-header', 'text-center', 'py-4');
+  title.innerText = 'Menu';
+  return title;
+};
+
+const createMenuBackground = () => {
+  const background = document.createElement('div');
+  background.classList.add('menu-background');
+  menu.forEach((item) => {
+    background.append(createMenuItem(item));
+  });
+  return background;
+};
+
+const createMenu = (container) => {
+  // const content = document.querySelector('#content');
+  container.append(createTitle());
+  container.append(createMenuBackground());
+};
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (createMenu);
 
 /***/ }),
 
@@ -683,41 +680,40 @@ function removeAllChildNodes(parent) {
 const navbar = (content, container) => {
   const nav = document.createElement('nav');
   nav.classList.add('w-100', 'px-4', 'py-3', 'nav-bar', 'd-flex', 'justify-content-around', 'bg-light', 'text-dark');
-  const f_nav = document.createElement('div');
-  const s_nav = document.createElement('div');
-  const t_nav = document.createElement('div');
+  const homeNav = document.createElement('div');
+  const menuNav = document.createElement('div');
+  const contactNav = document.createElement('div');
 
+  homeNav.classList.add('home');
+  homeNav.id = 'fn';
+  homeNav.textContent = 'Home';
+  menuNav.classList.add('menu');
+  menuNav.id = 'sn';
+  menuNav.textContent = 'Menu';
+  contactNav.classList.add('contact');
+  contactNav.id = 'tn';
+  contactNav.textContent = 'Contact';
 
-  f_nav.classList.add('home');
-  f_nav.id = 'fn';
-  f_nav.textContent = 'Home';
-  s_nav.classList.add('menu');
-  s_nav.id = 'sn';
-  s_nav.textContent = 'Menu';
-  t_nav.classList.add('contact');
-  t_nav.id = 'tn';
-  t_nav.textContent = 'Contact';
+  nav.appendChild(homeNav);
+  nav.appendChild(menuNav);
+  nav.appendChild(contactNav);
 
-  nav.appendChild(f_nav);
-  nav.appendChild(s_nav);
-  nav.appendChild(t_nav);
-  
   content.appendChild(nav);
   content.appendChild(container);
 
-  f_nav.addEventListener('click', () => {
+  homeNav.addEventListener('click', () => {
     removeAllChildNodes(container);
-    (0,_home__WEBPACK_IMPORTED_MODULE_0__.default)(container)
-  })
-  s_nav.addEventListener('click', () => {
+    (0,_home__WEBPACK_IMPORTED_MODULE_0__.default)(container);
+  });
+  menuNav.addEventListener('click', () => {
     removeAllChildNodes(container);
-   (0,_menu__WEBPACK_IMPORTED_MODULE_2__.createMenu)(container)
-  })
-  t_nav.addEventListener('click', () => {
+    (0,_menu__WEBPACK_IMPORTED_MODULE_2__.default)(container);
+  });
+  contactNav.addEventListener('click', () => {
     removeAllChildNodes(container);
-   (0,_contact__WEBPACK_IMPORTED_MODULE_1__.createContact)(container)
-  })
-}
+    (0,_contact__WEBPACK_IMPORTED_MODULE_1__.default)(container);
+  });
+};
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (navbar);
 
@@ -839,12 +835,10 @@ __webpack_require__.r(__webpack_exports__);
 
 const content = document.querySelector('#content');
 const container = document.createElement('div');
-container.classList.add('main-container')
-;(0,_nav__WEBPACK_IMPORTED_MODULE_1__.default)(content, container);
+container.classList.add('main-container');
+(0,_nav__WEBPACK_IMPORTED_MODULE_1__.default)(content, container);
 content.appendChild(container);
 (0,_home__WEBPACK_IMPORTED_MODULE_2__.default)(container);
-
-
 
 })();
 
