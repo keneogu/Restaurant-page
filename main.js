@@ -605,7 +605,7 @@ function MenuItem(name, src) {
 }
 
 const menu = [
-  new MenuItem('Simple Cheese', '../src/images/meat-poriedge.jpeg'),
+  new MenuItem('Simple Cheese', '../src/images/chicken.jpg'),
   new MenuItem('Mixed Foods', '../src/images/food.jpeg'),
   new MenuItem('Nigerian Jollof Rice', '../src/images/Nigerian-Jollof.jpeg'),
   new MenuItem('Vegetable Meal', '../src/images/veg.jpeg'),
