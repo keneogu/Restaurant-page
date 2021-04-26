@@ -23,16 +23,19 @@ To get a local copy up and running follow these simple example steps.
 Text editor
 Get a browser like chrome or firefox in their recent versions
 Node.js
-Mode Package Manager
+Node Package Manager
 
 ### Setup
 
-- Clone the repository in the folder of your choice:<br>
 - Install required dependencies `npm install`
+- Run `npm start` to start the local webserver
 
 ### Usage
 
-- open the `index.html` in dist folder
+- Clone this Repository using the command `git@github.com:keneogu/Restaurant-page.git`
+- Navigate to the directory `feature` in your File Editor
+- Run dist/index.html on your browser of preference. Recommended: Chrome/Firefox
+- If you wish to play around the codes, navigate to this Repository in the Text Editor
 
 ### Deployment
 
