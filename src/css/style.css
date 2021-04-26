@@ -1,0 +1,91 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background: url("../images/restaurant.jpeg") no-repeat center fixed;
+  background-size: cover;
+  color: aliceblue;
+}
+
+.main {
+  max-width: 100%;
+  background: rgba(131, 133, 131, 0.925);
+  border: 5px solid rgba(100, 236, 37, 0.933);
+  border-radius: 20px;
+  padding-bottom: 1em;
+  margin-top: 15%;
+  margin-bottom: 2em;
+  z-index: 0;
+}
+
+.main .main-div {
+  width: 50%;
+  margin: 0 auto;
+  padding-top: 25px;
+}
+
+.menu-background {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  background: rgba(131, 133, 131, 0.925);
+  border: 5px solid rgba(100, 236, 37, 0.933);
+  border-radius: 20px;
+  padding-bottom: 1em;
+  margin-bottom: 2em;
+  color: black;
+}
+
+.menu-item {
+  padding: 20px 20px 0 20px;
+}
+
+.menu-background img {
+  width: 300px;
+  height: 200px;
+}
+
+.menu-item p {
+  text-align: center;
+  padding-top: 10px;
+  font-size: 1.2em;
+}
+
+.contact-section {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 60%;
+  background: rgba(131, 133, 131, 0.925);
+  border: 5px solid rgba(100, 236, 37, 0.933);
+  border-radius: 20px;
+}
+
+.contact-section p {
+  text-align: center;
+  padding: 20px 0;
+  font-size: 1.2em;
+}
+
+@media (max-width: 768px) {
+  .menu-background {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+}
