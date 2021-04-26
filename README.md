@@ -33,7 +33,7 @@ Node Package Manager
 ### Usage
 
 - Clone this Repository using the command `git@github.com:keneogu/Restaurant-page.git`
-- Navigate to the directory `feature` in your File Editor
+- Navigate to the directory `git checkout feature` in your code editor
 - Run dist/index.html on your browser of preference. Recommended: Chrome/Firefox
 - If you wish to play around the codes, navigate to this Repository in the Text Editor
 
